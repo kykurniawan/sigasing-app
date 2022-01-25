@@ -18,7 +18,7 @@
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active">
+                    <a href="?page=home" class="nav-link active">
                         <i class="fas fa-home nav-icon"></i>
                         <p>Home</p>
                     </a>
@@ -33,7 +33,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="?page=lokasiread" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Lokasi</p>
                             </a>

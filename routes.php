@@ -7,11 +7,14 @@ if (isset($_GET['page'])) {
     switch ($page) {
         case '':
         case 'home':
-            page('pages/home');
+            view('pages/home');
+            break;
+        case 'lokasiread':
+            view('pages/admin/lokasiread');
             break;
         default:
-            page('pages/404');
+            view('pages/404');
     }
 } else {
-    page('pages/home');
+    view('pages/home');
 }

@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists('page')) {
+if (!function_exists('view')) {
     /**
      * Load poge file
      * 
@@ -8,7 +8,7 @@ if (!function_exists('page')) {
      * 
      * @return void
      */
-    function page(string $path)
+    function view(string $path)
     {
         $filePath = $path . '.php';
         if (file_exists($filePath)) {
