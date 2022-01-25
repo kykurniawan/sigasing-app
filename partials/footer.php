@@ -1,6 +1,6 @@
 <footer class="main-footer">
     <div class="float-right d-none d-sm-inline">
-        Anything you want
+        Version 1.0.1
     </div>
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; <?= date('Y') ?> <a href="https://www.rizkykurniawan.id">Praktikum Web</a>.</strong> All rights reserved.
 </footer>
