@@ -76,7 +76,7 @@ if (isset($_POST['button_create'])) {
                     <label for="uang_makan_perhari">Uang Makan Perhari</label>
                     <input type="number" class="form-control" name="uang_makan_perhari" onkeypress="return (event.charCode > 47 && event.charCode < 58) || event.charCode == 46">
                 </div>
-                <a href="?page=lokasiread" class="btn btn-danger btn-sm float-right">Batal</a>
+                <a href="?page=jabatanread" class="btn btn-danger btn-sm float-right">Batal</a>
                 <button name="button_create" type="submit" class="btn btn-success btn-sm float-right">
                     <i class="fa fa-save"></i> Simpan
                 </button>

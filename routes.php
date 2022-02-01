@@ -27,6 +27,12 @@ if (isset($_GET['page'])) {
         case 'jabatancreate':
             view('pages/admin/jabatancreate');
             break;
+        case 'jabatanupdate':
+            view('pages/admin/jabatanupdate');
+            break;
+        case 'jabatandelete':
+            view('pages/admin/jabatandelete');
+            break;
         default:
             view('pages/404');
     }

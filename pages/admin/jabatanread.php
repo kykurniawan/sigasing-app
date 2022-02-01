@@ -83,7 +83,7 @@
                                 <a href="?page=jabatanupdate&id=<?= $row['id'] ?>" class="btn btn-primary btn-sm mr-1">
                                     <i class="fa fa-edit"></i> Ubah
                                 </a>
-                                <a href="?page=lokasidelete&id=<?= $row['id'] ?>" class="btn btn-danger btn-sm" onClick="javascript: return confirm('Konfirmasi data akan dihapus?');">
+                                <a href="?page=jabatandelete&id=<?= $row['id'] ?>" class="btn btn-danger btn-sm" onClick="javascript: return confirm('Konfirmasi data akan dihapus?');">
                                     <i class="fa fa-trash"></i> Hapus
                                 </a>
                             </td>
