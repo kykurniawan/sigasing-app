@@ -18,12 +18,12 @@
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-item">
-                    <a href="?page=home" class="nav-link active">
+                    <a href="?page=home" class="nav-link">
                         <i class="fas fa-home nav-icon"></i>
                         <p>Home</p>
                     </a>
                 </li>
-                <li class="nav-item menu-open">
+                <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-copy"></i>
                         <p>

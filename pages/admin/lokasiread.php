@@ -73,10 +73,3 @@
     </div>
 </div>
 
-<?php include_once "partials/scripts.php" ?>
-<?php include_once "partials/scriptsdatatables.php" ?>
-<script>
-    $(function() {
-        $('#mytable').DataTable()
-    });
-</script>

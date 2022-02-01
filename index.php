@@ -17,6 +17,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <?php include "partials/control.php" ?>
         <?php include "partials/footer.php" ?>
     </div>
+    
+    <?php include_once "partials/scripts.php" ?>
+    <?php include_once "partials/scriptsdatatables.php" ?>
+    <script>
+        $(function() {
+            $('#mytable').DataTable()
+        });
+    </script>
 </body>
 
 </html>

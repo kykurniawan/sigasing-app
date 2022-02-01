@@ -12,6 +12,9 @@ if (isset($_GET['page'])) {
         case 'lokasiread':
             view('pages/admin/lokasiread');
             break;
+        case 'lokasicreate':
+            view('pages/admin/lokasicreate');
+            break;
         default:
             view('pages/404');
     }
