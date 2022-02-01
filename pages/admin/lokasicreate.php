@@ -1,3 +1,36 @@
+<?php
+if (isset($_POST['button_create'])) {
+    $database = new Database();
+    $connection = $database->getConnection();
+    $namaLokasi = htmlspecialchars($_POST['nama_lokasi']);
+
+    $validateSQL = "SELECT * FROM lokasi WHERE nama_lokasi = ?";
+    $statement = $connection->prepare($validateSQL);
+    $statement->bindParam(1, $namaLokasi);
+    $statement->execute();
+    if ($statement->rowCount() > 0) {
+?>
+        <div class="alert alert-danger alert-dismissable">
+            <button type="button" class="close" data-dismis="alert" aria-hidden="true">x</button>
+            <h5><i class="icon fas fa-ban"></i> Gagal</h5>
+            Nama lokasi sudah ada
+        </div>
+<?php
+    } else {
+        $insertSQL = "INSERT INTO lokasi SET nama_lokasi = ?";
+        $statement = $connection->prepare($insertSQL);
+        $statement->bindParam(1, $namaLokasi);
+        if ($statement->execute()) {
+            $_SESSION['hasil'] = true;
+            $_SESSION['pesan'] = 'Berhasil simpan data';
+        } else {
+            $_SESSION['hasil'] = false;
+            $_SESSION['pesan'] = 'Gagal simpan data';
+        }
+        echo '<meta http-equiv="refresh" content="0;url=?page=lokasiread">';
+    }
+}
+?>
 <section class="content-header">
     <div class="container-fluid">
         <div class="row mb2">
@@ -26,7 +59,7 @@
                     <input type="text" class="form-control" name="nama_lokasi">
                 </div>
                 <a href="?page=lokasiread" class="btn btn-danger btn-sm float-right">Batal</a>
-                <button type="submit" class="btn btn-success btn-sm float-right">
+                <button name="button_create" type="submit" class="btn btn-success btn-sm float-right">
                     <i class="fa fa-save"></i> Simpan
                 </button>
             </form>

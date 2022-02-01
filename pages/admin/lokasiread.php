@@ -2,6 +2,22 @@
 
 <div class="content-header">
     <div class="container-fluid">
+        <?php if (isset($_SESSION['hasil'])) : ?>
+            <?php if ($_SESSION['hasil']) : ?>
+                <div class="alert alert-danger alert-dismissable">
+                    <button type="button" class="close" data-dismis="alert" aria-hidden="true">x</button>
+                    <h5><i class="icon fas fa-check"></i> Berhasil</h5>
+                    <?= $_SESSION['pesan'] ?>
+                </div>
+            <?php else : ?>
+                <div class="alert alert-danger alert-dismissable">
+                    <button type="button" class="close" data-dismis="alert" aria-hidden="true">x</button>
+                    <h5><i class="icon fas fa-ban"></i> Gagal</h5>
+                    <?= $_SESSION['pesan'] ?>
+                </div>
+                <?php unset($_SESSION['hasil'], $_SESSION['pesan']) ?>
+            <?php endif ?>
+        <?php endif ?>
         <div class="row mb-2">
             <div class="col-sm-6">
                 <h1 class="m-0">Lokasi</h1>
@@ -72,4 +88,3 @@
         </div>
     </div>
 </div>
-

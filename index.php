@@ -1,8 +1,7 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
-<!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
--->
 <html lang="en">
 <?php include "partials/head.php" ?>
 <?php include "database/database.php" ?>
@@ -17,7 +16,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <?php include "partials/control.php" ?>
         <?php include "partials/footer.php" ?>
     </div>
-    
+
     <?php include_once "partials/scripts.php" ?>
     <?php include_once "partials/scriptsdatatables.php" ?>
     <script>
