@@ -2,7 +2,7 @@
 
 if (!function_exists('view')) {
     /**
-     * Load poge file
+     * Load page file
      * 
      * @param string $path
      * 
