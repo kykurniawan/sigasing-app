@@ -33,6 +33,18 @@ if (isset($_GET['page'])) {
         case 'jabatandelete':
             view('pages/admin/jabatandelete');
             break;
+        case 'bagianread':
+            view('pages/admin/bagianread');
+            break;
+        case 'bagiancreate':
+            view('pages/admin/bagiancreate');
+            break;
+        case 'bagianupdate':
+            view('pages/admin/bagianupdate');
+            break;
+        case 'bagiandelete':
+            view('pages/admin/bagiandelete');
+            break;
         default:
             view('pages/404');
     }

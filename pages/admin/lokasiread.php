@@ -4,19 +4,23 @@
     <div class="container-fluid">
         <?php if (isset($_SESSION['hasil'])) : ?>
             <?php if ($_SESSION['hasil']) : ?>
-                <div class="alert alert-success alert-dismissable">
-                    <button type="button" class="close" data-dismis="alert" aria-hidden="true">x</button>
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
                     <h5><i class="icon fas fa-check"></i> Berhasil</h5>
                     <?= $_SESSION['pesan'] ?>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
             <?php else : ?>
-                <div class="alert alert-danger alert-dismissable">
-                    <button type="button" class="close" data-dismis="alert" aria-hidden="true">x</button>
-                    <h5><i class="icon fas fa-ban"></i> Gagal</h5>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <h5><i class="icon fas fa-check"></i> Gagal</h5>
                     <?= $_SESSION['pesan'] ?>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <?php unset($_SESSION['hasil'], $_SESSION['pesan']) ?>
             <?php endif ?>
+            <?php unset($_SESSION['hasil'], $_SESSION['pesan']) ?>
         <?php endif ?>
         <div class="row mb-2">
             <div class="col-sm-6">
