@@ -45,6 +45,9 @@ if (isset($_GET['page'])) {
         case 'bagiandelete':
             view('pages/admin/bagiandelete');
             break;
+        case 'karyawanread':
+            view('pages/admin/karyawanread');
+            break;
         default:
             view('pages/404');
     }
