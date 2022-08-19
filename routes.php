@@ -48,6 +48,12 @@ if (isset($_GET['page'])) {
         case 'karyawanread':
             view('pages/admin/karyawanread');
             break;
+        case 'karyawancreate':
+            view('pages/admin/karyawancreate');
+            break;
+        case 'karyawanupdate':
+            view('pages/admin/karyawanupdate');
+            break;
         default:
             view('pages/404');
     }

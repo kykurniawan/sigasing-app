@@ -9,7 +9,7 @@ class Database
     {
         $this->host = 'localhost';
         $this->username = 'root';
-        $this->password = '';
+        $this->password = 'root';
         $this->db_name = 'praktikum_presensi_penggajian';
     }
 
